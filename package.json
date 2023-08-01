@@ -1,0 +1,46 @@
+{
+  "name": "chat-callkit",
+  "version": "1.0.1",
+  "description": "callkit React component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && nwb build-react-component --copy-files",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "prepublishOnly": "npm run build",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "devDependencies": {
+    "nwb": "0.25.x",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "author": "",
+  "homepage": "",
+  "license": "MIT",
+  "repository": "",
+  "keywords": [
+    "react-component"
+  ],
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
+    "agora-chat": "^1.0.5",
+    "agora-rtc-sdk-ng": "^4.16.0",
+    "axios": "^0.27.2",
+    "classnames": "^2.3.1",
+    "react-draggable": "^4.4.5",
+    "react-redux": "^8.0.1"
+  }
+}
